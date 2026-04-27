@@ -1,0 +1,39 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "ptpm_pr17_Console_Savitsin/1.0.0": {
+        "dependencies": {
+          "ptpm_pr17_Savitsin": "1.0.0"
+        },
+        "runtime": {
+          "ptpm_pr17_Console_Savitsin.dll": {}
+        }
+      },
+      "ptpm_pr17_Savitsin/1.0.0": {
+        "runtime": {
+          "ptpm_pr17_Savitsin.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ptpm_pr17_Console_Savitsin/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ptpm_pr17_Savitsin/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

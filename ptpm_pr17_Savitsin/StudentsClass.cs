@@ -1,8 +1,8 @@
 ﻿namespace ptpm_pr17_Savitsin
 {
-    public class StudentsClass //Базовый класс
+    public abstract class StudentsClass //Базовый класс
     {
-        static List<StudentsClass> studentsList = new List<StudentsClass>();
+        static public List<StudentsClass> studentsList = new List<StudentsClass>();
 
         string surname; //Фамилия
         string speciality; //Специальность
@@ -13,12 +13,13 @@
         public string Speciality { get; set; }
         public int Course { get; set; }
         public string FullOrPart { get; set; }
-        public StudentsClass() { }
-
-        static public string GetInfo(StudentsClass student)
+        public StudentsClass(string surname, string speciality, int course, string fullOrPart) 
         {
-            return $"Фамилия: {student.Surname}. Специальность: {student.Speciality}. " +
-                $"Курс: {student.Course}. Очник или заочник: {student.FullOrPart}";
+            this.surname = surname;
+            this.speciality = speciality;
+            this.course = course;
+            this.fullOrPart = fullOrPart;
         }
+        public abstract string GetInfo();
     }
 }

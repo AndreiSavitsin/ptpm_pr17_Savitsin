@@ -53,17 +53,17 @@ namespace ptpm_pr17_Savitsin
         {
             if (fullOrPart == "")
             {
-                return "Поле не может быть пустым";
+                return "Поле обучения не может быть пустым";
             }
             if (fullOrPart.ToLower() == "очное" || fullOrPart.ToLower() == "заочное") return "";
-            else return "Неверный формат записи";
+            else return "Неверный формат записи обучения";
         }
 
         public static string ValidateLivesDormitory(string livesDormitory)
         {
             if (livesDormitory == "")
             {
-                return "Поле не может быть пустым";
+                return "Поле проживания не может быть пустым";
             }
             if (livesDormitory.ToLower() == "да" || livesDormitory.ToLower() == "нет")
             {
@@ -71,7 +71,7 @@ namespace ptpm_pr17_Savitsin
             }
             else
             {
-                return "Неверный формат ответа";
+                return "Неверный формат проживания";
             }
         }
 
